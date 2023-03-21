@@ -1,25 +1,18 @@
+import react from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import Home from './component/Home';
+import About from './component/About';
+import Messages from './component/Messages';
+import NavbarOffcanvas from "./component/navigation/NavbarBS";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <></>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
